@@ -40,6 +40,9 @@ class LayoutImage(object):
         else:
             row = round(canvas_height / height)
             column = round(canvas_width / width)
+            if self._layout.canvas.is_del_extra:
+                canvas_width = width * column + space * (column + 1)
+                canvas_height = height * row + space * (row + 1)
         image = Image.new(mode="RGB", size=(canvas_width, canvas_height), color=canvas_color)
         image = self.set_pasts(image=image, img=img, row=row, column=column, space=space)
         img.close()

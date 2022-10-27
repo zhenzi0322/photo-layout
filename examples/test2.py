@@ -8,7 +8,6 @@ def main():
     layout_image = LayoutImage(layout=layout_model)
     image = layout_image.create()
     image.show()
-    image.save("imgs/example2.jpg")
 
 
 if __name__ == '__main__':

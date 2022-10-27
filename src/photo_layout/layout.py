@@ -5,7 +5,8 @@ from pydantic import BaseModel
 class Canvas(BaseModel):
     width: Optional[int]
     height: Optional[int]
-    color: Optional[str]
+    color: Optional[str] = "white"
+    is_del_extra: Optional[bool] = False
 
 
 class LayoutModel(BaseModel):
