@@ -1,4 +1,5 @@
 import os
+import math
 from PIL import Image
 from .layout import LayoutModel
 
@@ -38,8 +39,8 @@ class LayoutImage(object):
             canvas_width = width * column + space * (column + 1)
             canvas_height = height * row + space * (row + 1)
         else:
-            row = round(canvas_height / height)
-            column = round(canvas_width / width)
+            row = math.floor(canvas_height / (height + space))
+            column = math.floor(canvas_width / (width + space))
             if self._layout.canvas.is_del_extra:
                 canvas_width = width * column + space * (column + 1)
                 canvas_height = height * row + space * (row + 1)

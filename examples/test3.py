@@ -7,8 +7,7 @@ def main():
     layout_model = LayoutModel(canvas=canvas, imagePath="test.jpg", space=10)
     layout_image = LayoutImage(layout=layout_model)
     image = layout_image.create()
-    # image.show()
-    image.save("imgs/example3.jpg")
+    image.show()
 
 
 if __name__ == '__main__':
