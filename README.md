@@ -20,7 +20,7 @@ if __name__ == '__main__':
 ```
 效果图如下：
 
-![examples/imgs/example1.jpg](examples/imgs/example1.jpg)
+<img src="examples/imgs/example1.jpg" title="示例一" width="50%">
 
 当然你也可以调用`image.save("imgs/example1.jpg")`来保存到本地。
 
@@ -41,4 +41,4 @@ if __name__ == '__main__':
 ```
 效果图如下：
 
-![examples/imgs/example2.jpg](examples/imgs/example2.jpg)
+<img src="examples/imgs/example2.jpg" title="示例二" width="50%">
