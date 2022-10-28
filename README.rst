@@ -54,6 +54,8 @@ photo-layout
 
 效果图如下：
 
+.. image:: ./examples/imgs/example1.jpg
+
 当然你也可以调用\ ``image.save("imgs/example1.jpg")``\ 来保存到本地。
 
 示例二
@@ -80,9 +82,9 @@ photo-layout
 
 效果图如下：
 
-.. _示例二-1:
+.. image:: ./examples/imgs/example2.jpg
 
-示例二
+示例三
 ------
 
    根据图片来填充整个画布.
@@ -106,3 +108,5 @@ photo-layout
        main()
 
 效果图如下：
+
+.. image:: ./examples/imgs/example3.jpg
