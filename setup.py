@@ -12,16 +12,16 @@ def get_version():
         return fp.read().split('=')[1].strip(" \r\n'")
 
 
+
 setup(
     name='photo-layout',
     version=get_version(),
-    author='Yu Zhen',
+    author='玉振',
     author_email='82131529@qq.com',
     url='https://github.com/zhenzi0322/photo-layout',
     description='Photo Layout',
-    long_description=(
-        open('README.md', encoding='utf-8').read()
-    ),
+    long_description=(open("README.rst", encoding="utf-8").read()),
+    long_description_content_type="text/x-rst",
     license='MIT License',
     keywords="photo-layout",
     package_dir={'': 'src'},
@@ -30,6 +30,7 @@ setup(
         "pillow >= 8.4.0",
         "pydantic >= 1.9.0"
     ],
+    python_requires=">=3",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
